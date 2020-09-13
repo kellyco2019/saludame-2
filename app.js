@@ -5,13 +5,13 @@ function capitalize (string) {
 return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-app.get('/makers/:name', (req, res) => {
-    const { name } = req.params;
+app.get('/makers/:nombre', (req, res) => {
+    const { nombre } = req.params;
       let template = " Hola ";
 
-      template += capitalize (name) + "!";
+      template += capitalize (nombre) + "!";
 
-      res.send(`<h1> ${template}</h1>`);
+      res.send(`<h1>${template}</h1>`);
   });
   
 
