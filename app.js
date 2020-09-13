@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 function capitalize (string) {
-return string.charAt(0).toUpperCase()
+return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 app.get('/makers/:name', (req, res) => {
